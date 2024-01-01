@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Seymour+One&display=swap');
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -34,11 +36,18 @@ body {
   }
 
   nav a {
-    text-decoration: none;
     color: #ffffff;
     margin-right: 15px;
+    transition: color 0.3s ease;
   }
+
+  .menu a:hover{
+    color: orange;
+    text-decoration: none;
+  }
+
   .welcome{
+    position: relative;
     padding: 100px 20px;
     text-align: center;
     justify-items: center;
@@ -46,7 +55,28 @@ body {
     color: #ffffff;
     height: 100vh;
   }
+
+  .welcome-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .welcome-title h2{
+    font-family: 'Carattere', cursive;
+    font-weight: 400;
+    font-size: 48px;
+  }
+
+  .welcome-title p{
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 400;
+    font-size: 32px;
+  }
+
   .about-me {
+    margin-top: 70px;
     padding: 50px 20px;
     text-align: center;
     height: 40vh;
